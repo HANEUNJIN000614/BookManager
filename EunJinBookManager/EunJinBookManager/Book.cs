@@ -18,12 +18,14 @@ namespace EunJinBookManager
     public partial class Book : DevExpress.XtraEditors.XtraForm
     {
         BookPresenter presenter = null;
-               
+
         public Book()
         {
             InitializeComponent();
 
             presenter = new BookPresenter();
+
+            this.Shown += Book_Shown;
 
             BtnReset.Click += BtnReset_Click;
             BtnSave.Click += BtnSave_Click;
@@ -38,6 +40,8 @@ namespace EunJinBookManager
             TxtBNm.Text = "";
             TxtBAnthor.Text = "";
             TxtBCost.Text = "";
+
+            Search();
         }
 
         //저장
@@ -48,6 +52,8 @@ namespace EunJinBookManager
             if (isSucces)
             {
                 EghisMessageBox.Show("저장 완료");
+
+                Search();
             }
             else
             {
@@ -55,7 +61,6 @@ namespace EunJinBookManager
                 return;
             }
         }
-
         private bool Save()
         {
             BooksEntity book = new BooksEntity();
@@ -71,6 +76,7 @@ namespace EunJinBookManager
         private void BtnDelete_Click(object sender, EventArgs e)
         {
             bool isSucces = Delete();
+
             if (isSucces)
             {
                 EghisMessageBox.Show("삭제 완료");
@@ -99,5 +105,22 @@ namespace EunJinBookManager
         }
 
         //조회
+        private void Book_Shown(object sender, EventArgs e)
+        {
+            SetGridHeader();
+            Search();
+        }
+        private void SetGridHeader()
+        {
+            GridSearch.AddColumn("bId", "도서ID", 80);
+            GridSearch.AddColumn("bNm", "도서제목", 180);
+            GridSearch.AddColumn("bAnthor", "도서저자", 80);
+            GridSearch.AddColumn("bCost", "도서가격", 100);
+        }
+        private void Search()
+        {
+            List<BooksEntity> list = presenter.Search();
+            GridSearch.DataSource = list;
+        }
     }
 }

@@ -4,3 +4,9 @@ C:\Users\admin\source\repos\EunJinBookManager\EunJinBookManagerEntity\obj\Debug\
 C:\Users\admin\source\repos\EunJinBookManager\EunJinBookManagerEntity\obj\Debug\EunJinBookManagerEntity.csproj.CoreCompileInputs.cache
 C:\Users\admin\source\repos\EunJinBookManager\EunJinBookManagerEntity\obj\Debug\EunJinBookManagerEntity.dll
 C:\Users\admin\source\repos\EunJinBookManager\EunJinBookManagerEntity\obj\Debug\EunJinBookManagerEntity.pdb
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerEntity\bin\Debug\EunJinBookManagerEntity.dll
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerEntity\bin\Debug\EunJinBookManagerEntity.pdb
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerEntity\obj\Debug\EunJinBookManagerEntity.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerEntity\obj\Debug\EunJinBookManagerEntity.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerEntity\obj\Debug\EunJinBookManagerEntity.dll
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerEntity\obj\Debug\EunJinBookManagerEntity.pdb

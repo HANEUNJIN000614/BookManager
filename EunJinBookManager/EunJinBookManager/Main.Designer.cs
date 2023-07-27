@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             this.BtnBook = new eGhis.Controls.EghisButton();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.BtnCustomers = new eGhis.Controls.EghisButton();
             this.BtnBookRent = new eGhis.Controls.EghisButton();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnBook
@@ -50,16 +49,6 @@
             this.BtnBook.Size = new System.Drawing.Size(102, 94);
             this.BtnBook.TabIndex = 0;
             this.BtnBook.Text = "도서관리";
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.EditValue = "도서관리시스템";
-            this.textEdit1.Location = new System.Drawing.Point(218, 74);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(152, 34);
-            this.textEdit1.TabIndex = 1;
             // 
             // BtnCustomers
             // 
@@ -93,29 +82,41 @@
             this.BtnBookRent.TabIndex = 3;
             this.BtnBookRent.Text = "대출/반납";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 20F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(209, 86);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(169, 33);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "도서관리시스템";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // EunJinBookManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(598, 368);
-            this.Controls.Add(this.textEdit1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnBookRent);
             this.Controls.Add(this.BtnCustomers);
             this.Controls.Add(this.BtnBook);
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "EunJinBookManager";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "도서관리시스템";
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private eGhis.Controls.EghisButton BtnBook;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
         private eGhis.Controls.EghisButton BtnCustomers;
         private eGhis.Controls.EghisButton BtnBookRent;
+        private System.Windows.Forms.Label label1;
     }
 }
 

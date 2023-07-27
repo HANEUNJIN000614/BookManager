@@ -25,5 +25,11 @@ namespace EunJinBookManagerRepository
             return Execute(sql, book) == 1;
         }
 
+        public List<BooksEntity> Search()
+        {
+            string sql = new BooksQuery().Search();
+
+            return Query<BooksEntity>(sql);
+        }
     }
 }

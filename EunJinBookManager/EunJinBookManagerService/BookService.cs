@@ -26,5 +26,10 @@ namespace EunJinBookManagerService
         {
             return BooksRepo.Delete(book);
         }
+
+        public List<BooksEntity> Search()
+        {
+            return BooksRepo.Search();
+        }
     }
 }

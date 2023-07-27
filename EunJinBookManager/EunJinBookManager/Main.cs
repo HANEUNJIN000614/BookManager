@@ -16,16 +16,14 @@ namespace EunJinBookManager
         {
             InitializeComponent();
 
-      
-            BtnBook.DoubleClick += BtnBook_DoubleClick;
+            BtnBook.Click += BtnBook_Click;
         }
 
-        private void BtnBook_DoubleClick(object sender, EventArgs e)
+        private void BtnBook_Click(object sender, EventArgs e)
         {
             using (Book book = new Book())
             {
                 book.ShowDialog();
-                book.Close();
             }
         }
     }

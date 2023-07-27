@@ -30,8 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Book));
             this.eghisGroupBox1 = new eGhis.Controls.EghisGroupBox();
-            this.GridSelete = new eGhis.Controls.EghisDataGrid();
+            this.GridSearch = new eGhis.Controls.EghisDataGrid();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.eghisLayoutControl1 = new eGhis.Controls.EghisLayoutControl();
             this.TxtBCost = new eGhis.Controls.EghisTextBox();
             this.TxtBAnthor = new eGhis.Controls.EghisTextBox();
@@ -49,8 +50,9 @@
             this.BtnReset = new eGhis.Controls.EghisButton();
             ((System.ComponentModel.ISupportInitialize)(this.eghisGroupBox1)).BeginInit();
             this.eghisGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GridSelete)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eghisLayoutControl1)).BeginInit();
             this.eghisLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TxtBCost.Properties)).BeginInit();
@@ -69,7 +71,7 @@
             // eghisGroupBox1
             // 
             this.eghisGroupBox1.AutoFontSizeChange = true;
-            this.eghisGroupBox1.Controls.Add(this.GridSelete);
+            this.eghisGroupBox1.Controls.Add(this.GridSearch);
             this.eghisGroupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.eghisGroupBox1.Location = new System.Drawing.Point(10, 135);
             this.eghisGroupBox1.Margin = new System.Windows.Forms.Padding(5);
@@ -78,29 +80,30 @@
             this.eghisGroupBox1.TabIndex = 0;
             this.eghisGroupBox1.Text = "도서 목록 현황";
             // 
-            // GridSelete
+            // GridSearch
             // 
-            this.GridSelete.AutoFontSizeChange = true;
-            this.GridSelete.AutoSaveLoadLayout = false;
-            this.GridSelete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GridSelete.GridRowFont = new System.Drawing.Font("Tahoma", 9F);
-            this.GridSelete.GridRowHeaderFont = new System.Drawing.Font("Tahoma", 9F);
-            this.GridSelete.GridSelectionType = eGhis.Controls.GridSelectionType.Row;
-            this.GridSelete.GroupPanelText = " 항목을 끌어 그룹을 설정할 수 있습니다.";
-            this.GridSelete.Location = new System.Drawing.Point(2, 23);
-            this.GridSelete.MainView = this.gridView1;
-            this.GridSelete.Name = "GridSelete";
-            this.GridSelete.NewRowType = eGhis.Controls.NewRowType.None;
-            this.GridSelete.ShowColumnHeader = true;
-            this.GridSelete.ShowGroupingPanel = false;
-            this.GridSelete.Size = new System.Drawing.Size(574, 198);
-            this.GridSelete.TabIndex = 0;
-            this.GridSelete.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.GridSearch.AutoFontSizeChange = true;
+            this.GridSearch.AutoSaveLoadLayout = false;
+            this.GridSearch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GridSearch.GridRowFont = new System.Drawing.Font("Tahoma", 9F);
+            this.GridSearch.GridRowHeaderFont = new System.Drawing.Font("Tahoma", 9F);
+            this.GridSearch.GridSelectionType = eGhis.Controls.GridSelectionType.Row;
+            this.GridSearch.GroupPanelText = " 항목을 끌어 그룹을 설정할 수 있습니다.";
+            this.GridSearch.Location = new System.Drawing.Point(2, 23);
+            this.GridSearch.MainView = this.gridView1;
+            this.GridSearch.Name = "GridSearch";
+            this.GridSearch.NewRowType = eGhis.Controls.NewRowType.None;
+            this.GridSearch.ShowColumnHeader = true;
+            this.GridSearch.ShowGroupingPanel = false;
+            this.GridSearch.Size = new System.Drawing.Size(574, 198);
+            this.GridSearch.TabIndex = 0;
+            this.GridSearch.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1,
+            this.gridView2});
             // 
             // gridView1
             // 
-            this.gridView1.GridControl = this.GridSelete;
+            this.gridView1.GridControl = this.GridSearch;
             this.gridView1.GroupPanelText = " 항목을 끌어 그룹을 설정할 수 있습니다.";
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsCustomization.AllowGroup = false;
@@ -108,6 +111,17 @@
             this.gridView1.OptionsMenu.ShowAutoFilterRowItem = false;
             this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridView2
+            // 
+            this.gridView2.GridControl = this.GridSearch;
+            this.gridView2.GroupPanelText = " 항목을 끌어 그룹을 설정할 수 있습니다.";
+            this.gridView2.Name = "gridView2";
+            this.gridView2.OptionsCustomization.AllowGroup = false;
+            this.gridView2.OptionsCustomization.AllowQuickHideColumns = false;
+            this.gridView2.OptionsMenu.ShowAutoFilterRowItem = false;
+            this.gridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridView2.OptionsView.ShowGroupPanel = false;
             // 
             // eghisLayoutControl1
             // 
@@ -371,8 +385,9 @@
             this.Text = "도서관리시스템 > 도서관리";
             ((System.ComponentModel.ISupportInitialize)(this.eghisGroupBox1)).EndInit();
             this.eghisGroupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.GridSelete)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eghisLayoutControl1)).EndInit();
             this.eghisLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TxtBCost.Properties)).EndInit();
@@ -404,12 +419,13 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
-        private eGhis.Controls.EghisDataGrid GridSelete;
+        private eGhis.Controls.EghisDataGrid GridSearch;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private eGhis.Controls.EghisTablePanel eghisTablePanel1;
         private eGhis.Controls.EghisButton BtnClose;
         private eGhis.Controls.EghisButton BtnDelete;
         private eGhis.Controls.EghisButton BtnSave;
         private eGhis.Controls.EghisButton BtnReset;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
     }
 }

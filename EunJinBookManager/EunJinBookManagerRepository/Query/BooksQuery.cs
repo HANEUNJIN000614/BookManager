@@ -11,13 +11,13 @@ namespace EunJinBookManagerRepository.Query
         public string Save()
         {
             StringBuilder sql = new StringBuilder();
-            sql.AppendLine("INSERT INTO public.books                 ");
-            sql.AppendLine(" (                                        ");
-            sql.AppendLine(" 	b_id, b_nm, b_anthor, b_cost         ");
-            sql.AppendLine(" )                                        ");
-            sql.AppendLine(" VALUES                                   ");
-            sql.AppendLine(" (                                        ");
-            sql.AppendLine(" 	@bId, @bNm, @bAnthor, @bCost     ");
+            sql.AppendLine("INSERT INTO public.books         ");
+            sql.AppendLine(" (                               ");
+            sql.AppendLine(" 	b_id, b_nm, b_anthor, b_cost ");
+            sql.AppendLine(" )                               ");
+            sql.AppendLine(" VALUES                          ");
+            sql.AppendLine(" (                               ");
+            sql.AppendLine(" 	@bId, @bNm, @bAnthor, @bCost ");
             sql.AppendLine(" )");
             return sql.ToString();
         }
@@ -31,6 +31,14 @@ namespace EunJinBookManagerRepository.Query
             sb.AppendLine("      AND b_anthor = @bAnthor"  );
             sb.AppendLine("      AND b_cost = @bCost;"     );
 
+            return sb.ToString();
+        }
+
+        public string Search()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("SELECT * FROM public.books;");
+            
             return sb.ToString();
         }
     }

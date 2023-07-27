@@ -13,3 +13,17 @@ C:\Users\admin\source\repos\EunJinBookManager\EunJinBookManagerService\bin\Debug
 C:\Users\admin\source\repos\EunJinBookManager\EunJinBookManagerService\bin\Debug\EunJinBookManagerRepository.dll
 C:\Users\admin\source\repos\EunJinBookManager\EunJinBookManagerService\bin\Debug\EunJinBookManagerEntity.pdb
 C:\Users\admin\source\repos\EunJinBookManager\EunJinBookManagerService\bin\Debug\EunJinBookManagerRepository.pdb
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\obj\Debug\EunJinBookManagerService.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\obj\Debug\EunJinBookManagerService.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\obj\Debug\EunJinBookManagerService.dll
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\obj\Debug\EunJinBookManagerService.pdb
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\bin\Debug\EunJinBookManagerService.dll
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\bin\Debug\EunJinBookManagerService.pdb
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\bin\Debug\EunJinBookManagerEntity.dll
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\bin\Debug\EunJinBookManagerRepository.dll
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\bin\Debug\Npgsql.dll
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\bin\Debug\Dapper.dll
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\bin\Debug\Mono.Security.dll
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\bin\Debug\EunJinBookManagerEntity.pdb
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\bin\Debug\EunJinBookManagerRepository.pdb
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\obj\Debug\EunJinBookManagerService.csproj.CopyComplete

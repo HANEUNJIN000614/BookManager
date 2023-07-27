@@ -1,4 +1,5 @@
-﻿using EunJinBookManagerEntity;
+﻿using DevExpress.XtraBars.Ribbon;
+using EunJinBookManagerEntity;
 using EunJinBookManagerService;
 using System;
 using System.Collections.Generic;
@@ -26,5 +27,9 @@ namespace EunJinBookManager.Presenter
             return bookService.Delete(book);
         }
 
+        public List<BooksEntity> Search()
+        {
+            return bookService.Search();
+        }
     }
 }

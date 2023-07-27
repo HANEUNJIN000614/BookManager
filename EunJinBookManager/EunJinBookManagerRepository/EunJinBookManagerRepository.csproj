@@ -44,9 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BooksRepository.cs" />
-    <Compile Include="Book_rentRepository.cs" />
-    <Compile Include="CustomersRepository.cs" />
+    <Compile Include="Repository\BooksRepository.cs" />
+    <Compile Include="Repository\Book_rentRepository.cs" />
+    <Compile Include="Repository\CustomersRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Query\BooksQuery.cs" />
     <Compile Include="Query\Book_rentQuery.cs" />
