@@ -28,7 +28,7 @@ namespace EunJinBookManager.Presenter
         }
 
         public List<BooksEntity> Search()
-        {
+        {           
             return bookService.Search();
         }
     }

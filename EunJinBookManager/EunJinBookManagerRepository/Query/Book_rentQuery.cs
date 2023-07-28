@@ -8,5 +8,6 @@ namespace EunJinBookManagerRepository.Query
 {
     internal class Book_rentQuery
     {
+        
     }
 }

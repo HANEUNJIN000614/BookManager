@@ -27,9 +27,6 @@ namespace EunJinBookManagerRepository.Query
             StringBuilder sb = new StringBuilder(); 
             sb.AppendLine("DELETE FROM public.books"        );
             sb.AppendLine("WHERE     b_id = @bId"          );
-            sb.AppendLine("      AND b_nm = @bNm"          );
-            sb.AppendLine("      AND b_anthor = @bAnthor"  );
-            sb.AppendLine("      AND b_cost = @bCost;"     );
 
             return sb.ToString();
         }

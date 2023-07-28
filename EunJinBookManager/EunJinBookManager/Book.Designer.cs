@@ -152,7 +152,7 @@
             this.TxtBCost.ReadonlyType = false;
             this.TxtBCost.Size = new System.Drawing.Size(146, 20);
             this.TxtBCost.StyleController = this.eghisLayoutControl1;
-            this.TxtBCost.TabIndex = 7;
+            this.TxtBCost.TabIndex = 4;
             this.TxtBCost.TextInputType = eGhis.Controls.TextInputType.Default;
             this.TxtBCost.TextMaskType = eGhis.Controls.TextMaskType.None;
             this.TxtBCost.UseNumericSeparator = false;
@@ -171,7 +171,7 @@
             this.TxtBAnthor.ReadonlyType = false;
             this.TxtBAnthor.Size = new System.Drawing.Size(146, 20);
             this.TxtBAnthor.StyleController = this.eghisLayoutControl1;
-            this.TxtBAnthor.TabIndex = 6;
+            this.TxtBAnthor.TabIndex = 3;
             this.TxtBAnthor.TextInputType = eGhis.Controls.TextInputType.Default;
             this.TxtBAnthor.TextMaskType = eGhis.Controls.TextMaskType.None;
             this.TxtBAnthor.UseNumericSeparator = false;
@@ -190,7 +190,7 @@
             this.TxtBNm.ReadonlyType = false;
             this.TxtBNm.Size = new System.Drawing.Size(146, 20);
             this.TxtBNm.StyleController = this.eghisLayoutControl1;
-            this.TxtBNm.TabIndex = 5;
+            this.TxtBNm.TabIndex = 2;
             this.TxtBNm.TextInputType = eGhis.Controls.TextInputType.Default;
             this.TxtBNm.TextMaskType = eGhis.Controls.TextMaskType.None;
             this.TxtBNm.UseNumericSeparator = false;
@@ -209,7 +209,7 @@
             this.TxtBId.ReadonlyType = false;
             this.TxtBId.Size = new System.Drawing.Size(146, 20);
             this.TxtBId.StyleController = this.eghisLayoutControl1;
-            this.TxtBId.TabIndex = 4;
+            this.TxtBId.TabIndex = 0;
             this.TxtBId.TextInputType = eGhis.Controls.TextInputType.Default;
             this.TxtBId.TextMaskType = eGhis.Controls.TextMaskType.None;
             this.TxtBId.UseNumericSeparator = false;

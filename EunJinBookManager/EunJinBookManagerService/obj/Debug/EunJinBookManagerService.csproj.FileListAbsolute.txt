@@ -21,9 +21,9 @@ C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBo
 C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\bin\Debug\EunJinBookManagerService.pdb
 C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\bin\Debug\EunJinBookManagerEntity.dll
 C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\bin\Debug\EunJinBookManagerRepository.dll
-C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\bin\Debug\Npgsql.dll
-C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\bin\Debug\Dapper.dll
-C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\bin\Debug\Mono.Security.dll
 C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\bin\Debug\EunJinBookManagerEntity.pdb
 C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\bin\Debug\EunJinBookManagerRepository.pdb
 C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\obj\Debug\EunJinBookManagerService.csproj.CopyComplete
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerService\bin\Debug\Dapper.dll
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\bin\EunJinBookManagerService.dll
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\bin\EunJinBookManagerService.pdb

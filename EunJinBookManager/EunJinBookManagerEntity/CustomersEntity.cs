@@ -8,9 +8,13 @@ namespace EunJinBookManagerEntity
 {
     public class CustomersEntity
     {
-        public int c_id { get; set; }
-        public string c_nm { get; set; }
+        public int cId { get; set; }
+        public string cNm { get; set; }
         public string addr { get; set; }
+        public string sex { get; set; }
+        public string sexNm { get; set; }
+        public string job { get; set; }
+        public string jobNm { get; set; }
         public string phone { get; set; }
     }
 }

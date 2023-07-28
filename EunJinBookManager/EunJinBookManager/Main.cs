@@ -10,13 +10,14 @@ using System.Windows.Forms;
 
 namespace EunJinBookManager
 {
-    public partial class EunJinBookManager : DevExpress.XtraEditors.XtraForm 
+    public partial class EunJinBookManager : DevExpress.XtraEditors.XtraForm
     {
         public EunJinBookManager()
         {
             InitializeComponent();
 
             BtnBook.Click += BtnBook_Click;
+            BtnCustomers.Click += BtnCustomers_Click;
         }
 
         private void BtnBook_Click(object sender, EventArgs e)
@@ -24,6 +25,14 @@ namespace EunJinBookManager
             using (Book book = new Book())
             {
                 book.ShowDialog();
+            }
+        }
+
+        private void BtnCustomers_Click(object sender, EventArgs e)
+        {
+            using (Customers customers = new Customers())
+            {
+                customers.ShowDialog();
             }
         }
     }

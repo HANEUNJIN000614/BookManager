@@ -17,13 +17,13 @@ namespace EunJinBookManager
 {
     public partial class Book : DevExpress.XtraEditors.XtraForm
     {
-        BookPresenter presenter = null;
+        BookPresenter _presenter = null;
 
         public Book()
         {
             InitializeComponent();
 
-            presenter = new BookPresenter();
+            _presenter = new BookPresenter();
 
             this.Shown += Book_Shown;
 
@@ -52,7 +52,6 @@ namespace EunJinBookManager
             if (isSucces)
             {
                 EghisMessageBox.Show("저장 완료");
-
                 Search();
             }
             else
@@ -69,7 +68,7 @@ namespace EunJinBookManager
             book.bAnthor = TxtBAnthor.Text;
             book.bCost = Convert.ToInt32(TxtBCost.Text);
 
-            return presenter.Save(book);
+            return _presenter.Save(book);
         }
 
         //삭제
@@ -80,10 +79,12 @@ namespace EunJinBookManager
             if (isSucces)
             {
                 EghisMessageBox.Show("삭제 완료");
+                Search();
             }
             else
             {
                 EghisMessageBox.Show("삭제 실패");
+                return;
             }
         }
 
@@ -91,11 +92,8 @@ namespace EunJinBookManager
         {
             BooksEntity book = new BooksEntity();
             book.bId = Convert.ToInt32(TxtBId.Text);
-            book.bNm = TxtBNm.Text;
-            book.bAnthor = TxtBAnthor.Text;
-            book.bCost = Convert.ToInt32(TxtBCost.Text);
 
-            return presenter.Delete(book);
+            return _presenter.Delete(book);
         }
 
         //닫기
@@ -119,7 +117,7 @@ namespace EunJinBookManager
         }
         private void Search()
         {
-            List<BooksEntity> list = presenter.Search();
+            List<BooksEntity> list = _presenter.Search();
             GridSearch.DataSource = list;
         }
     }

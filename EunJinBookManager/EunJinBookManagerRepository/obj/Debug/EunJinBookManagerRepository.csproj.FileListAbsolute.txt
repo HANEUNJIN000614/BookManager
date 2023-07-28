@@ -13,9 +13,6 @@ C:\Users\admin\source\repos\EunJinBookManager\EunJinBookManagerRepository\obj\De
 C:\Users\admin\source\repos\EunJinBookManager\EunJinBookManagerRepository\obj\Debug\EunJinBookManagerRepository.pdb
 C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerRepository\bin\Debug\EunJinBookManagerRepository.dll
 C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerRepository\bin\Debug\EunJinBookManagerEntity.dll
-C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerRepository\bin\Debug\Npgsql.dll
-C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerRepository\bin\Debug\Dapper.dll
-C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerRepository\bin\Debug\Mono.Security.dll
 C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerRepository\bin\Debug\EunJinBookManagerEntity.pdb
 C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerRepository\obj\Debug\EunJinBookManagerRepository.csproj.AssemblyReference.cache
 C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerRepository\obj\Debug\EunJinBookManagerRepository.csproj.CoreCompileInputs.cache
@@ -23,3 +20,6 @@ C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBo
 C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerRepository\obj\Debug\EunJinBookManagerRepository.dll
 C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerRepository\obj\Debug\EunJinBookManagerRepository.pdb
 C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerRepository\bin\Debug\EunJinBookManagerRepository.pdb
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerRepository\bin\Debug\Dapper.dll
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\bin\EunJinBookManagerRepository.dll
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\bin\EunJinBookManagerRepository.pdb

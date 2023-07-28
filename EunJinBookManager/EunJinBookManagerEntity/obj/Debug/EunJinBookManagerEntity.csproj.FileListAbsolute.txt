@@ -10,3 +10,5 @@ C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBo
 C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerEntity\obj\Debug\EunJinBookManagerEntity.csproj.CoreCompileInputs.cache
 C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerEntity\obj\Debug\EunJinBookManagerEntity.dll
 C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManagerEntity\obj\Debug\EunJinBookManagerEntity.pdb
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\bin\EunJinBookManagerEntity.dll
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\bin\EunJinBookManagerEntity.pdb
