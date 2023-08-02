@@ -30,14 +30,14 @@ namespace EunJinBookManager
 
             _presenter = new CustomersPresenter();
 
-            this.Shown += Customers_Shown;
+            this.Load += Customers_Load;
 
             BtnReset.Click += BtnReset_Click;
             BtnSave.Click += BtnSave_Click;
             BtnDelete.Click += BtnDelete_Click;
             BtnClose.Click += BtnClose_Click;
 
-            GridSearch.CellLeftDoubleClick += GridSearch_CellLeftDoubleClick;
+            GridSearch.CellLeftClick += GridSearch_CellLeftClick;
         }
 
         //초기화
@@ -70,19 +70,42 @@ namespace EunJinBookManager
                 DataReset();
                 Search();
             }
-            else
-            {
-                EghisMessageBox.Show("고객을 등록할 수 없습니다.");
-                return;
-            }
+            return;
         }
 
         private bool Save()
         {
             CustomersEntity customers = new CustomersEntity();
+
+            if (!ValidateInput(customers))
+            {
+                return false;
+            }
+
+            return _presenter.Save(customers);
+        }
+
+        private bool ValidateInput(CustomersEntity customers)
+        {
+            // 고객명 유효성 검증
+            if (string.IsNullOrWhiteSpace(TxtCNm.Text))
+            {
+                EghisMessageBox.Show("고객명을 입력해주세요.");
+                TxtCNm.Focus();
+                return false;
+            }
+
+            // 성별 유효성 검증
+            if (!M.Checked && !F.Checked)
+            {
+                EghisMessageBox.Show("성별을 선택해주세요.");
+                return false;
+            }
+
             customers.sex = M.Checked ? "M" : "F";
             customers.cNm = TxtCNm.Text;
 
+            // 직업 유효성 검증
             string selectedValue = CbxJob.SelectedItem?.ToString();
             string result;
 
@@ -95,11 +118,36 @@ namespace EunJinBookManager
             else
                 result = "N/A";
 
+            // 직업 유효성 검증
+            if (result == "N/A")
+            {
+                EghisMessageBox.Show("직업을 선택해주세요.");
+                return false;
+            }
+
             customers.job = result;
+
+            // 전화번호 유효성 검증
+            if (string.IsNullOrWhiteSpace(TxtPhone.Text) || !long.TryParse(TxtPhone.Text.Replace("-", ""), out _))
+            {
+                EghisMessageBox.Show("유효한 전화번호를 입력해주세요.");
+                TxtPhone.Focus();
+                return false;
+            }
+
             customers.phone = TxtPhone.Text.Replace("-", "");
+
+            // 주소 유효성 검증
+            if (string.IsNullOrWhiteSpace(TxtAddr.Text))
+            {
+                EghisMessageBox.Show("주소를 입력해주세요.");
+                TxtAddr.Focus();
+                return false;
+            }
+
             customers.addr = TxtAddr.Text;
 
-            return _presenter.Save(customers);
+            return true;
         }
 
         //삭제
@@ -129,7 +177,7 @@ namespace EunJinBookManager
             return _presenter.Delete(customers);
         }
 
-        private void GridSearch_CellLeftDoubleClick(object sender, eGhis.CustomEventArgs.CellRowClickEventArgs e)
+        private void GridSearch_CellLeftClick(object sender, eGhis.CustomEventArgs.CellRowClickEventArgs e)
         {
             CustomersEntity customers = e.Row as CustomersEntity;
             TxtCId.Text = customers.cId.ToString();
@@ -165,7 +213,7 @@ namespace EunJinBookManager
         }
 
         //조회
-        private void Customers_Shown(object sender, EventArgs e)
+        private void Customers_Load(object sender, EventArgs e)
         {
             TxtCId.ReadOnly = true;
             string[] jobList = { "학생", "직장인", "무직" };
