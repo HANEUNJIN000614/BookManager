@@ -39,10 +39,6 @@
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.eghisGroupBox1 = new eGhis.Controls.EghisGroupBox();
             this.eghisLayoutControl1 = new eGhis.Controls.EghisLayoutControl();
-            this.TxtJobNm = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.TxtSexNm = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.eghisTablePanel2 = new eGhis.Controls.EghisTablePanel();
             this.M = new eGhis.Controls.EghisRadioButton();
             this.F = new eGhis.Controls.EghisRadioButton();
@@ -51,18 +47,14 @@
             this.TxtPhone = new eGhis.Controls.EghisTextBox();
             this.TxtCNm = new eGhis.Controls.EghisTextBox();
             this.TxtAddr = new eGhis.Controls.EghisTextBox();
-            this.TxtCId = new eGhis.Controls.EghisTextBox();
             this.Root = new eGhis.Controls.EghisLayoutGroup();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.TxtCId = new eGhis.Controls.EghisTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.eghisTablePanel1)).BeginInit();
             this.eghisTablePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridSearch)).BeginInit();
@@ -80,18 +72,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtPhone.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtCNm.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAddr.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtCId.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // eghisTablePanel1
@@ -245,10 +233,6 @@
             // eghisLayoutControl1
             // 
             this.eghisLayoutControl1.AutoFontSizeChange = true;
-            this.eghisLayoutControl1.Controls.Add(this.TxtJobNm);
-            this.eghisLayoutControl1.Controls.Add(this.label3);
-            this.eghisLayoutControl1.Controls.Add(this.TxtSexNm);
-            this.eghisLayoutControl1.Controls.Add(this.label1);
             this.eghisLayoutControl1.Controls.Add(this.eghisTablePanel2);
             this.eghisLayoutControl1.Controls.Add(this.CbxJob);
             this.eghisLayoutControl1.Controls.Add(this.TxtPhone);
@@ -259,39 +243,9 @@
             this.eghisLayoutControl1.Name = "eghisLayoutControl1";
             this.eghisLayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(716, 14, 650, 870);
             this.eghisLayoutControl1.Root = this.Root;
-            this.eghisLayoutControl1.Size = new System.Drawing.Size(373, 140);
+            this.eghisLayoutControl1.Size = new System.Drawing.Size(373, 117);
             this.eghisLayoutControl1.TabIndex = 4;
             this.eghisLayoutControl1.Text = "eghisLayoutControl1";
-            // 
-            // TxtJobNm
-            // 
-            this.TxtJobNm.Location = new System.Drawing.Point(280, 108);
-            this.TxtJobNm.Name = "TxtJobNm";
-            this.TxtJobNm.Size = new System.Drawing.Size(81, 20);
-            this.TxtJobNm.TabIndex = 15;
-            // 
-            // label3
-            // 
-            this.label3.Location = new System.Drawing.Point(195, 108);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 20);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "직업 (jobNm)";
-            // 
-            // TxtSexNm
-            // 
-            this.TxtSexNm.Location = new System.Drawing.Point(99, 108);
-            this.TxtSexNm.Name = "TxtSexNm";
-            this.TxtSexNm.Size = new System.Drawing.Size(92, 20);
-            this.TxtSexNm.TabIndex = 13;
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(12, 108);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 20);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "성별 (sexNm)";
             // 
             // eghisTablePanel2
             // 
@@ -437,25 +391,6 @@
             this.TxtAddr.TextMaskType = eGhis.Controls.TextMaskType.None;
             this.TxtAddr.UseNumericSeparator = false;
             // 
-            // TxtCId
-            // 
-            this.TxtCId.AutoFillHeight = true;
-            this.TxtCId.AutoFontSizeChange = true;
-            this.TxtCId.BorderStyle = eGhis.Controls.CustomBorderStyle.SingleBorder;
-            this.TxtCId.CharacterCasingType = System.Windows.Forms.CharacterCasing.Normal;
-            this.TxtCId.EmptyHintText = "";
-            this.TxtCId.Location = new System.Drawing.Point(107, 12);
-            this.TxtCId.Name = "TxtCId";
-            this.TxtCId.PasswordChar = '\0';
-            this.TxtCId.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.TxtCId.ReadonlyType = false;
-            this.TxtCId.Size = new System.Drawing.Size(77, 20);
-            this.TxtCId.StyleController = this.eghisLayoutControl1;
-            this.TxtCId.TabIndex = 4;
-            this.TxtCId.TextInputType = eGhis.Controls.TextInputType.Default;
-            this.TxtCId.TextMaskType = eGhis.Controls.TextMaskType.None;
-            this.TxtCId.UseNumericSeparator = false;
-            // 
             // Root
             // 
             this.Root.AppearanceItemCaption.Options.UseTextOptions = true;
@@ -468,28 +403,10 @@
             this.layoutControlItem3,
             this.layoutControlItem4,
             this.layoutControlItem2,
-            this.layoutControlItem8,
-            this.layoutControlItem5,
-            this.layoutControlItem6,
-            this.layoutControlItem9,
-            this.layoutControlItem10});
+            this.layoutControlItem8});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(373, 140);
+            this.Root.Size = new System.Drawing.Size(373, 117);
             this.Root.TextVisible = false;
-            // 
-            // layoutControlItem1
-            // 
-            this.layoutControlItem1.ContentHorzAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.layoutControlItem1.ContentVertAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.layoutControlItem1.Control = this.TxtCId;
-            this.layoutControlItem1.CustomizationFormText = "고객ID (c_id)";
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(176, 24);
-            this.layoutControlItem1.Text = "고객ID (c_id)";
-            this.layoutControlItem1.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(90, 14);
-            this.layoutControlItem1.TextToControlDistance = 5;
             // 
             // layoutControlItem7
             // 
@@ -534,7 +451,7 @@
             this.layoutControlItem2.CustomizationFormText = "c_nam";
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 72);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(353, 24);
+            this.layoutControlItem2.Size = new System.Drawing.Size(353, 25);
             this.layoutControlItem2.Text = "주소 (addr)";
             this.layoutControlItem2.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(90, 14);
@@ -555,41 +472,38 @@
             this.layoutControlItem8.TextSize = new System.Drawing.Size(90, 14);
             this.layoutControlItem8.TextToControlDistance = 5;
             // 
-            // layoutControlItem5
+            // layoutControlItem1
             // 
-            this.layoutControlItem5.Control = this.label1;
-            this.layoutControlItem5.Location = new System.Drawing.Point(0, 96);
-            this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(87, 24);
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem5.TextVisible = false;
+            this.layoutControlItem1.ContentHorzAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.layoutControlItem1.ContentVertAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.layoutControlItem1.Control = this.TxtCId;
+            this.layoutControlItem1.CustomizationFormText = "고객ID (c_id)";
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(176, 24);
+            this.layoutControlItem1.Text = "고객ID (c_id)";
+            this.layoutControlItem1.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(90, 14);
+            this.layoutControlItem1.TextToControlDistance = 5;
             // 
-            // layoutControlItem6
+            // TxtCId
             // 
-            this.layoutControlItem6.Control = this.TxtSexNm;
-            this.layoutControlItem6.Location = new System.Drawing.Point(87, 96);
-            this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(96, 24);
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem6.TextVisible = false;
-            // 
-            // layoutControlItem9
-            // 
-            this.layoutControlItem9.Control = this.label3;
-            this.layoutControlItem9.Location = new System.Drawing.Point(183, 96);
-            this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(85, 24);
-            this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem9.TextVisible = false;
-            // 
-            // layoutControlItem10
-            // 
-            this.layoutControlItem10.Control = this.TxtJobNm;
-            this.layoutControlItem10.Location = new System.Drawing.Point(268, 96);
-            this.layoutControlItem10.Name = "layoutControlItem10";
-            this.layoutControlItem10.Size = new System.Drawing.Size(85, 24);
-            this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem10.TextVisible = false;
+            this.TxtCId.AutoFillHeight = true;
+            this.TxtCId.AutoFontSizeChange = true;
+            this.TxtCId.BorderStyle = eGhis.Controls.CustomBorderStyle.SingleBorder;
+            this.TxtCId.CharacterCasingType = System.Windows.Forms.CharacterCasing.Normal;
+            this.TxtCId.EmptyHintText = "";
+            this.TxtCId.Location = new System.Drawing.Point(107, 12);
+            this.TxtCId.Name = "TxtCId";
+            this.TxtCId.PasswordChar = '\0';
+            this.TxtCId.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.TxtCId.ReadonlyType = false;
+            this.TxtCId.Size = new System.Drawing.Size(77, 20);
+            this.TxtCId.StyleController = this.eghisLayoutControl1;
+            this.TxtCId.TabIndex = 4;
+            this.TxtCId.TextInputType = eGhis.Controls.TextInputType.Default;
+            this.TxtCId.TextMaskType = eGhis.Controls.TextMaskType.None;
+            this.TxtCId.UseNumericSeparator = false;
             // 
             // Customers
             // 
@@ -620,18 +534,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtPhone.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtCNm.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAddr.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtCId.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -651,9 +561,7 @@
         private eGhis.Controls.EghisRadioButton F;
         private eGhis.Controls.EghisTextBox TxtCNm;
         private eGhis.Controls.EghisTextBox TxtAddr;
-        private eGhis.Controls.EghisTextBox TxtCId;
         private eGhis.Controls.EghisLayoutGroup Root;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private eGhis.Controls.EghisComboBox CbxJob;
@@ -663,13 +571,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private eGhis.Controls.EghisTablePanel eghisTablePanel2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
-        private System.Windows.Forms.Label TxtJobNm;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label TxtSexNm;
-        private System.Windows.Forms.Label label1;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
+        private eGhis.Controls.EghisTextBox TxtCId;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
     }
 }

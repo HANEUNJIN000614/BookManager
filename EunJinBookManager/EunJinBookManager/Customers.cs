@@ -49,8 +49,11 @@ namespace EunJinBookManager
 
         private void DataReset()
         {
+            TxtCId.ReadOnly = true;
             TxtCId.Text = "";
-            //todo: 성별, 직업
+            F.Checked = false;
+            M.Checked = false;
+            CbxJob.SelectedText = string.Empty;
             TxtCNm.Text = "";
             TxtPhone.Text = "";
             TxtAddr.Text = "";
@@ -77,10 +80,22 @@ namespace EunJinBookManager
         private bool Save()
         {
             CustomersEntity customers = new CustomersEntity();
-            customers.cId = Convert.ToInt32(TxtCId.Text);
             customers.sex = M.Checked ? "M" : "F";
             customers.cNm = TxtCNm.Text;
-            customers.job = CbxJob.Text;
+
+            string selectedValue = CbxJob.SelectedItem?.ToString();
+            string result;
+
+            if (selectedValue == "직장인")
+                result = "O";
+            else if (selectedValue == "무직")
+                result = "I";
+            else if (selectedValue == "학생")
+                result = "S";
+            else
+                result = "N/A";
+
+            customers.job = result;
             customers.phone = TxtPhone.Text.Replace("-", "");
             customers.addr = TxtAddr.Text;
 
@@ -97,6 +112,7 @@ namespace EunJinBookManager
                 EghisMessageBox.Show("고객이 삭제되었습니다.");
 
                 Search();
+                DataReset();
             }
             else
             {
@@ -131,8 +147,15 @@ namespace EunJinBookManager
             CbxJob.Text = customers.job.ToString();
             TxtAddr.Text = customers.addr.ToString();
             TxtPhone.Text = customers.phone.ToString();
-            TxtSexNm.Text = customers.sexNm.ToString();
-            TxtJobNm.Text = customers.jobNm.ToString();
+
+            if (customers.job == "O")
+                CbxJob.SelectedIndex = 1;
+            else if (customers.job == "I")
+                CbxJob.SelectedIndex = 2;
+            else if (customers.job == "S")
+                CbxJob.SelectedIndex = 0;
+            else
+                CbxJob.SelectedText = string.Empty;
         }
 
         //닫기
@@ -144,6 +167,7 @@ namespace EunJinBookManager
         //조회
         private void Customers_Shown(object sender, EventArgs e)
         {
+            TxtCId.ReadOnly = true;
             string[] jobList = { "학생", "직장인", "무직" };
             CbxJob.DataSource = jobList;
             //CbxJob.AddDataRow("");
@@ -155,15 +179,16 @@ namespace EunJinBookManager
         private void SetGridHeader()
         {
             GridSearch.AddColumn("cId", "고객ID", 80);
-            GridSearch.AddColumn("sex", "성별", 50);
+            GridSearch.AddColumn("sexNm", "성별", 50);
             GridSearch.AddColumn("cNm", "고객명", 100);
-            GridSearch.AddColumn("job", "직업", 100);
+            GridSearch.AddColumn("jobNm", "직업", 100);
             GridSearch.AddColumn("phone", "전화번호", 150);
             GridSearch.AddColumn("addr", "주소", 200);
         }
         
         private void Search()
         {
+            TxtCId.ReadOnly = true;
             List<CustomersEntity> list = _presenter.Search();
             GridSearch.DataSource = list;
         }

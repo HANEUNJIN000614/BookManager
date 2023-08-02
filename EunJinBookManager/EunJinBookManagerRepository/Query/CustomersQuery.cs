@@ -11,14 +11,15 @@ namespace EunJinBookManagerRepository.Query
         public string SaveQuery()
         {
             StringBuilder sql = new StringBuilder();
-            sql.AppendLine("INSERT INTO public.customers              ");
-            sql.AppendLine("(                                         ");
-            sql.AppendLine("	c_id, c_nm, addr, sex, job, phone     ");
-            sql.AppendLine(")                                         ");
-            sql.AppendLine("VALUES                                    ");
-            sql.AppendLine("(                                         ");
-            sql.AppendLine("	@cId, @cNm, @addr, @sex, @job, @phone ");
-            sql.AppendLine(")                                         ");
+            sql.AppendLine(" INSERT INTO public.customers                                  ");
+            sql.AppendLine(" (                                                             ");
+            sql.AppendLine(" 	c_id, c_nm, addr, sex, job, phone                          ");
+            sql.AppendLine(" )                                                             ");
+            sql.AppendLine(" VALUES                                                        ");
+            sql.AppendLine(" (                                                             ");
+            sql.AppendLine(" 	(SELECT COALESCE(MAX(c_id)+1, 100) FROM public.customers), ");
+            sql.AppendLine(" 	@cNm, @addr, @sex, @job, @phone                            ");
+            sql.AppendLine(" )                                                             ");
 
             return sql.ToString();
         }
@@ -33,21 +34,19 @@ namespace EunJinBookManagerRepository.Query
         public string SearchQuery()
         {
             StringBuilder sql = new StringBuilder();
-            sql.AppendLine("  SELECT a.c_id                ");
-            sql.AppendLine("       , a.c_nm                ");
-            sql.AppendLine("       , a.addr                ");
-            sql.AppendLine("       , a.sex                 ");
-            sql.AppendLine("       , a.job                 ");
-            sql.AppendLine("       , a.phone               ");
-            sql.AppendLine("  	 , b.code_val AS sex_nm   ");
-            sql.AppendLine("  	 , c.code_val AS job_nm   ");
-            sql.AppendLine("  FROM customers a,            ");
-            sql.AppendLine("  	 book_code b,             ");
-            sql.AppendLine("  	 book_code c              ");
-            sql.AppendLine("  WHERE b.code_div = 'sex'     ");
-            sql.AppendLine("    AND b.code_key = a.sex     ");
-            sql.AppendLine("    AND c.code_div = 'job'     ");
-            sql.AppendLine("    AND c.code_key = a.job;    ");
+            sql.AppendLine(" SELECT c_id                                 ");
+            sql.AppendLine("      , c_nm                                 ");
+            sql.AppendLine("      , addr                                 ");
+            sql.AppendLine("      , sex                                  ");
+            sql.AppendLine("      , (SELECT code_val FROM book_code      ");
+            sql.AppendLine("      	WHERE code_div = 'sex'               ");
+            sql.AppendLine("      		AND a.sex = code_key) AS sex_nm  ");
+            sql.AppendLine("      , job                                  ");
+            sql.AppendLine("      , (SELECT code_val FROM book_code      ");
+            sql.AppendLine("      	WHERE code_div = 'job'               ");
+            sql.AppendLine("      		AND a.job = code_key) AS job_nm  ");
+            sql.AppendLine("      , phone                                ");
+            sql.AppendLine(" FROM customers a;                           ");
 
             return sql.ToString();
         }
