@@ -47,14 +47,14 @@
             this.TxtPhone = new eGhis.Controls.EghisTextBox();
             this.TxtCNm = new eGhis.Controls.EghisTextBox();
             this.TxtAddr = new eGhis.Controls.EghisTextBox();
+            this.TxtCId = new eGhis.Controls.EghisTextBox();
             this.Root = new eGhis.Controls.EghisLayoutGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.TxtCId = new eGhis.Controls.EghisTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.eghisTablePanel1)).BeginInit();
             this.eghisTablePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridSearch)).BeginInit();
@@ -72,14 +72,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtPhone.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtCNm.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAddr.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtCId.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCId.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // eghisTablePanel1
@@ -391,6 +391,25 @@
             this.TxtAddr.TextMaskType = eGhis.Controls.TextMaskType.None;
             this.TxtAddr.UseNumericSeparator = false;
             // 
+            // TxtCId
+            // 
+            this.TxtCId.AutoFillHeight = true;
+            this.TxtCId.AutoFontSizeChange = true;
+            this.TxtCId.BorderStyle = eGhis.Controls.CustomBorderStyle.SingleBorder;
+            this.TxtCId.CharacterCasingType = System.Windows.Forms.CharacterCasing.Normal;
+            this.TxtCId.EmptyHintText = "";
+            this.TxtCId.Location = new System.Drawing.Point(107, 12);
+            this.TxtCId.Name = "TxtCId";
+            this.TxtCId.PasswordChar = '\0';
+            this.TxtCId.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.TxtCId.ReadonlyType = false;
+            this.TxtCId.Size = new System.Drawing.Size(77, 20);
+            this.TxtCId.StyleController = this.eghisLayoutControl1;
+            this.TxtCId.TabIndex = 4;
+            this.TxtCId.TextInputType = eGhis.Controls.TextInputType.Default;
+            this.TxtCId.TextMaskType = eGhis.Controls.TextMaskType.None;
+            this.TxtCId.UseNumericSeparator = false;
+            // 
             // Root
             // 
             this.Root.AppearanceItemCaption.Options.UseTextOptions = true;
@@ -407,6 +426,20 @@
             this.Root.Name = "Root";
             this.Root.Size = new System.Drawing.Size(373, 117);
             this.Root.TextVisible = false;
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.ContentHorzAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.layoutControlItem1.ContentVertAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.layoutControlItem1.Control = this.TxtCId;
+            this.layoutControlItem1.CustomizationFormText = "고객ID (c_id)";
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(176, 24);
+            this.layoutControlItem1.Text = "고객ID (c_id)";
+            this.layoutControlItem1.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(90, 14);
+            this.layoutControlItem1.TextToControlDistance = 5;
             // 
             // layoutControlItem7
             // 
@@ -472,39 +505,6 @@
             this.layoutControlItem8.TextSize = new System.Drawing.Size(90, 14);
             this.layoutControlItem8.TextToControlDistance = 5;
             // 
-            // layoutControlItem1
-            // 
-            this.layoutControlItem1.ContentHorzAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.layoutControlItem1.ContentVertAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.layoutControlItem1.Control = this.TxtCId;
-            this.layoutControlItem1.CustomizationFormText = "고객ID (c_id)";
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(176, 24);
-            this.layoutControlItem1.Text = "고객ID (c_id)";
-            this.layoutControlItem1.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(90, 14);
-            this.layoutControlItem1.TextToControlDistance = 5;
-            // 
-            // TxtCId
-            // 
-            this.TxtCId.AutoFillHeight = true;
-            this.TxtCId.AutoFontSizeChange = true;
-            this.TxtCId.BorderStyle = eGhis.Controls.CustomBorderStyle.SingleBorder;
-            this.TxtCId.CharacterCasingType = System.Windows.Forms.CharacterCasing.Normal;
-            this.TxtCId.EmptyHintText = "";
-            this.TxtCId.Location = new System.Drawing.Point(107, 12);
-            this.TxtCId.Name = "TxtCId";
-            this.TxtCId.PasswordChar = '\0';
-            this.TxtCId.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.TxtCId.ReadonlyType = false;
-            this.TxtCId.Size = new System.Drawing.Size(77, 20);
-            this.TxtCId.StyleController = this.eghisLayoutControl1;
-            this.TxtCId.TabIndex = 4;
-            this.TxtCId.TextInputType = eGhis.Controls.TextInputType.Default;
-            this.TxtCId.TextMaskType = eGhis.Controls.TextMaskType.None;
-            this.TxtCId.UseNumericSeparator = false;
-            // 
             // Customers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -534,14 +534,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtPhone.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtCNm.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAddr.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtCId.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtCId.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

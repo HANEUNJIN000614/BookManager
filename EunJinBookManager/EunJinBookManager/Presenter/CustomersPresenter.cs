@@ -10,26 +10,26 @@ namespace EunJinBookManager.Presenter
 {
     internal class CustomersPresenter
     {
-        CustomersService customersService = null;
+        CustomersService _customersService = null;
 
         public CustomersPresenter()
         {
-            customersService = new CustomersService();
+            _customersService = new CustomersService();
         }
 
         public bool Save(CustomersEntity customers)
         {
-            return customersService.Save(customers);
+            return _customersService.Save(customers);
         }
 
         public bool Delete(CustomersEntity customers)
         {
-            return customersService.Delete(customers);
+            return _customersService.Delete(customers);
         }
 
         public List<CustomersEntity> Search()
         {
-            return customersService.Search();                
+            return _customersService.Search();                
         }
     }
 }

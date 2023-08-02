@@ -1,4 +1,5 @@
 ﻿using DevExpress.ClipboardSource.SpreadsheetML;
+using DevExpress.XtraGauges.Win.Base;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +19,7 @@ namespace EunJinBookManager
 
             BtnBook.Click += BtnBook_Click;
             BtnCustomers.Click += BtnCustomers_Click;
+            BtnBookRent.Click += BtnBookRent_Click;
         }
 
         private void BtnBook_Click(object sender, EventArgs e)
@@ -33,6 +35,14 @@ namespace EunJinBookManager
             using (Customers customers = new Customers())
             {
                 customers.ShowDialog();
+            }
+        }
+
+        private void BtnBookRent_Click(object sender, EventArgs e)
+        {
+            using (BookRent bookRent = new BookRent())
+            {
+                bookRent.ShowDialog();
             }
         }
     }

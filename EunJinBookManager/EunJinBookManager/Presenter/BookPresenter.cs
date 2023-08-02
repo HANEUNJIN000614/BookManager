@@ -11,25 +11,25 @@ namespace EunJinBookManager.Presenter
 {
     internal class BookPresenter
     {
-        BookService bookService = null;
+        BookService _bookService = null;
         public BookPresenter()
         {
-            bookService = new BookService();
+            _bookService = new BookService();
         }
 
         public bool Save(BooksEntity book)
         {
-            return bookService.Save(book);
+            return _bookService.Save(book);
         }
 
         public bool Delete(BooksEntity book)
         {
-            return bookService.Delete(book);
+            return _bookService.Delete(book);
         }
 
         public List<BooksEntity> Search()
         {           
-            return bookService.Search();
+            return _bookService.Search();
         }
     }
 }

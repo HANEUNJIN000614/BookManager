@@ -48,11 +48,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Repository\BooksRepository.cs" />
-    <Compile Include="Repository\Book_rentRepository.cs" />
+    <Compile Include="Repository\BookRentRepository.cs" />
     <Compile Include="Repository\CustomersRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Query\BooksQuery.cs" />
-    <Compile Include="Query\Book_rentQuery.cs" />
+    <Compile Include="Query\BookRentQuery.cs" />
     <Compile Include="Query\CustomersQuery.cs" />
   </ItemGroup>
   <ItemGroup>

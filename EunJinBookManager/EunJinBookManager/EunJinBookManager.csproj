@@ -105,11 +105,23 @@
     <Compile Include="Book.Designer.cs">
       <DependentUpon>Book.cs</DependentUpon>
     </Compile>
+    <Compile Include="BookRent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookRent.Designer.cs">
+      <DependentUpon>BookRent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customers.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Customers.Designer.cs">
       <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customersSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customersSearch.Designer.cs">
+      <DependentUpon>customersSearch.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -118,14 +130,21 @@
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Presenter\BookPresenter.cs" />
+    <Compile Include="Presenter\BookRentPresenter.cs" />
     <Compile Include="Presenter\CustomersPresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Book.resx">
       <DependentUpon>Book.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BookRent.resx">
+      <DependentUpon>BookRent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Customers.resx">
       <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customersSearch.resx">
+      <DependentUpon>customersSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

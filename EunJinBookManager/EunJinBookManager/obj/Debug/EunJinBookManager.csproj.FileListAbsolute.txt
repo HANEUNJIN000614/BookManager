@@ -189,3 +189,5 @@ C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBo
 C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\bin\EunJinBookManager.exe.config
 C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\bin\EunJinBookManager.exe
 C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\bin\EunJinBookManager.pdb
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManager\obj\Debug\EunJinBookManager.BookRent.resources
+C:\Users\admin\source\repos\gitEunJinBook\BookManager\EunJinBookManager\EunJinBookManager\obj\Debug\EunJinBookManager.customersSearch.resources

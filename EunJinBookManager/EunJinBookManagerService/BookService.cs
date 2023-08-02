@@ -10,26 +10,26 @@ namespace EunJinBookManagerService
 {
     public class BookService
     {
-        BooksRepository BooksRepo = null;
+        BooksRepository _BooksRepo = null;
 
         public BookService()
         {
-            BooksRepo = new BooksRepository();        
+            _BooksRepo = new BooksRepository();        
         }
 
         public bool Save(BooksEntity book)
         {
-            return BooksRepo.Save(book);
+            return _BooksRepo.Save(book);
         }
 
         public bool Delete(BooksEntity book)
         {
-            return BooksRepo.Delete(book);
+            return _BooksRepo.Delete(book);
         }
 
         public List<BooksEntity> Search()
         {
-            return BooksRepo.Search();
+            return _BooksRepo.Search();
         }
     }
 }
